@@ -71,7 +71,7 @@ const render = data => {
 }
 
 d3.csv("starbucks.csv", function(data) {
-    data.forEach(data => {
+    data.forEach(d => {
         d.Calories = +d.Calories
         d.Fat = +d.Fat
         d.Carb = +d.Carb
