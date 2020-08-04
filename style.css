@@ -1,0 +1,60 @@
+body{
+	margin: 0px;
+}
+
+rect{fill:steelblue}
+
+rect:hover {
+  fill: red;
+}
+
+text{
+	font-size: 1.4em;
+}
+
+
+p{
+	font-size: 18px;
+
+}
+a { color:red } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:blue; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:blue; }
+a:hover, a:active { text-decoration: none; color:black }
+
+
+.tooltip {
+            position: absolute;
+            font-size: 17px;
+            width:  auto;
+            height: auto;
+            pointer-events: none;
+			background: rgb(231, 221, 221);
+			border: 1px black;
+			color: black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #fff;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+  
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+
