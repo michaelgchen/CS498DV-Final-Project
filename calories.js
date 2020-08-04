@@ -71,12 +71,12 @@ const render = data => {
 }
 
 d3.csv("starbucks.csv", function(data) {
-    data.forEach(d => {
-        d.Calories = +d.Calories
-        d.Fat = +d.Fat
-        d.Carb = +d.Carb
-        d.Fiber = +d.Fiber
-        d.Protein = +d.Protein
+    data.forEach(data => {
+        data.Calories = +data.Calories
+        data.Fat = +data.Fat
+        data.Carb = +data.Carb
+        data.Fiber = +data.Fiber
+        data.Protein = +data.Protein
     })
     data.sort(function(min, max) {
         return d3.descending(min.Calories, max.Calories)
